@@ -1,15 +1,13 @@
 import { useState } from 'react'
 import './App.css'
-import { PomodoroTimer } from './components/PomodoroTimer'
+import { PomodoroTimer } from './components/Pomodoro/PomodoroTimer'
 
 function App(): JSX.Element {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <h1>DEIXA EU CODARRRRRRRRRRRRRRRRR</h1>
-        <PomodoroTimer  defaultPomodoroTime={1500} />
+      <div className="container">
+        <h1>Pomodoro</h1>
+        <PomodoroTimer  PomodoroTime={1500} shortRestTime = {300}  longRestTime ={500} cycles={4}/>
       </div>
       
     </>

@@ -6,5 +6,28 @@
 }
 
 body {
-  font-family:  sans-serif;
+  font-family: 'Roboto', sans-serif;
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, #deaaff 0%, #d8bbff 25%, #d0d1ff 50%, #c8e7ff 75%, #c0fdff 100%);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }

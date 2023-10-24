@@ -1,0 +1,36 @@
+.timer {
+    font-family: 'Nabla';
+    font-size: 15rem;
+    font-palette: --altone;
+
+
+}
+
+@font-palette-values --altone {
+    font-family: "Nabla";
+    override-colors: 0 #000000,
+        1 #ae94f5,
+        2 #cf9ef0,
+        3 #d197f7,
+        4 #ffffff,
+        5 #8474d2,
+        6 #9ce4f2,
+        7 #8988e2,
+        8 #a5ade9,
+        9 #ffffff;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+}
+
+.details {
+    margin: 2rem;
+    font-weight: bold;
+    color: #18141473;
+}
+
+.details p {
+    padding: 1rem;
+}
