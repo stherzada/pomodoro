@@ -18,8 +18,10 @@ export function PomodoroTimer(props: Props): JSX.Element {
   const [working, setWorking] = React.useState(false);
   const [cyclesQtdMenager, setCyclesManager] = React.useState(new Array(props.cycles - 1).fill(true));
 
+
+  // setFullWorkingTime
   const[completetedCycles, setCompletedCycles] =  React.useState(0);
-  const[fullWorkingTime, setFullWorkingTime] =  React.useState(0);
+  const[fullWorkingTime] =  React.useState(0);
   const[numberOfPomodoros, setNumberOfPomodoros] =  React.useState(0);
 
   useInterval(
