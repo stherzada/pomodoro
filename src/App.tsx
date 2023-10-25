@@ -7,9 +7,9 @@ function App(): JSX.Element {
       <div className="container">
         <h1>Pomodoro</h1>
         <PomodoroTimer
-          PomodoroTime={10}
-          shortRestTime={5}
-          longRestTime={500}
+          PomodoroTime={3600}
+          shortRestTime={300}
+          longRestTime={900}
           cycles={4}
         />
       </div>
