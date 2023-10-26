@@ -5,7 +5,6 @@ function App(): JSX.Element {
   return (
     <>
       <div className="container">
-        <h1>Pomodoro</h1>
         <PomodoroTimer
           PomodoroTime={1500}
           shortRestTime={300}

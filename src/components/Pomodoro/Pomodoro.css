@@ -2,13 +2,14 @@
     font-family: 'Nabla';
     font-size: 15rem;
     font-palette: --altone;
-
+    font-variant-numeric: tabular-nums;
 
 }
 
 @font-palette-values --altone {
     font-family: "Nabla";
-    override-colors: 0 #000000,
+    override-colors:
+        0 #000000,
         1 #ae94f5,
         2 #cf9ef0,
         3 #d197f7,
@@ -33,8 +34,24 @@
 
 .details p {
     padding: 1rem;
+    font-weight: 400;
+    font-size: 1.3rem;
 }
 
 .hidden {
     display: none;
+}
+
+
+.working .timer {
+    font-palette: --working;
+}
+
+@font-palette-values --working {
+    font-family: "Nabla";
+    override-colors: 0 #90bed0, 1 #9d97c8, 2 #878992, 3 #9197b1, 4 #ccf1ff, 5 #73c9c9, 6 #d3eaf3, 7 #90effe, 8 #a2ddf1, 9 #fdf7f7;
+}
+
+.working button {
+    background: linear-gradient(196.6deg, #6bb6c5 30%, #61a5c2 100%)
 }

@@ -2,12 +2,15 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-}
-
-h1 {
-    color: #0000002e;
+    min-width: 640px;
+    transition: all .5s ease-out;
 }
 
 h2 {
+    font-weight: 400;
     color: #3f3b3b47;
+}
+
+#status {
+    font-weight: 700;
 }
