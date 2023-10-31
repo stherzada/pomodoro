@@ -21,6 +21,10 @@ export function PomodoroTimer(props: Props): JSX.Element {
   const [cyclesQtdMenager, setCyclesManager] = React.useState(
     new Array(props.cycles - 1).fill(true)
   )
+  const [userInputTime, setUserInputTime] = React.useState<number | null>(null)
+  const [customPomodoroTime, setCustomPomodoroTime] = React.useState(
+    props.PomodoroTime
+  )
 
   const [completetedCycles, setCompletedCycles] = React.useState(0)
   const [fullWorkingTime, setFullWorkingTime] = React.useState(0)
@@ -28,8 +32,12 @@ export function PomodoroTimer(props: Props): JSX.Element {
 
   useInterval(
     () => {
-      setMainTime(mainTime - 1)
-      if (working) setFullWorkingTime(fullWorkingTime + 1)
+      if (mainTime > 0) {
+        setMainTime(mainTime - 1)
+      }
+      if (working && mainTime > 0) {
+        setFullWorkingTime(fullWorkingTime + 1)
+      }
     },
     timeCounting ? 1000 : null
   )
@@ -38,8 +46,8 @@ export function PomodoroTimer(props: Props): JSX.Element {
     setTimeCouting(true)
     setWorking(true)
     setResting(false)
-    setMainTime(props.PomodoroTime)
-  }, [setTimeCouting, setWorking, setResting, setMainTime, props.PomodoroTime])
+    setMainTime(customPomodoroTime)
+  }, [setTimeCouting, setWorking, setResting, setMainTime, customPomodoroTime])
 
   const configureRest = useCallback(
     (long: boolean) => {
@@ -107,6 +115,30 @@ export function PomodoroTimer(props: Props): JSX.Element {
           text={timeCounting ? "Pause" : "Play"}
           onClick={() => setTimeCouting(!timeCounting)}
         ></Button>
+
+        <input
+          className="custom-input"
+          type="number"
+          min={0}
+          max={3600}
+          placeholder="Time in Seconds"
+          onChange={(e) => {
+            const inputValue = parseInt(e.target.value, 10)
+            if (inputValue > 3600) {
+              setUserInputTime(3600)
+            } else {
+              setUserInputTime(Number(e.target.value))
+            }
+          }}
+        />
+
+        <Button
+          text="Set Custom Time"
+          onClick={() => {
+            setMainTime(userInputTime || props.PomodoroTime)
+            setCustomPomodoroTime(userInputTime || props.PomodoroTime)
+          }}
+        />
       </div>
 
       <div className="details">
