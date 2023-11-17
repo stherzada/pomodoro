@@ -103,9 +103,10 @@ export function PomodoroTimer(props: Props): JSX.Element {
 
   return (
     <>
-      <h2>You are:</h2>
-      <h2 id="status">{working ? "Working" : "Resting"}</h2>
-
+      <div className="titleMood">
+        <h2>You are:</h2>
+        <h2 id="status">{working ? "Working" : "Resting"}</h2>
+      </div>
       <Timer mainTime={mainTime} />
       <div className="controls">
         <Button text="Start" onClick={() => configureWork()}></Button>
@@ -115,7 +116,9 @@ export function PomodoroTimer(props: Props): JSX.Element {
           text={timeCounting ? "Pause" : "Play"}
           onClick={() => setTimeCouting(!timeCounting)}
         ></Button>
+      </div>
 
+      <div className="setTimer">
         <input
           className="custom-input"
           type="number"
@@ -140,7 +143,6 @@ export function PomodoroTimer(props: Props): JSX.Element {
           }}
         />
       </div>
-
       <div className="details">
         <p>
           Completed cycles: <strong>{completetedCycles}</strong>
