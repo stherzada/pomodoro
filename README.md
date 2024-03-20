@@ -9,8 +9,13 @@
 ![imagem com um timer de pomodoro, alguns botões, e legendas de quantos pomodoros fez, tempo de pomodoro, quantos ciclos foram fechados](https://i.imgur.com/Qf4ato2.png)
 
 ---
+### 🔗 Link para o projeto: 
+- [Pomodoro](https://pomodoro-five-zeta.vercel.app)
 
-### ⭐ Como utilizar este projeto?
+
+---
+
+### ⭐ Como utilizar este projeto local?
 
 -  Para fazer este projeto rodar em sua máquina, recomendo **clonar** este projeto e instalar qualquer versão acima da **12** do [node](https://nodejs.org/en/download) em sua máquina.
 
@@ -34,12 +39,7 @@ Quando todas as expansões forem baixadas, dê este comando no terminal:
 - [Nabla (Fonte)](https://nabla.typearture.com)
 --- 
 
-### 🔗 Link para o projeto: 
-- [Pomodoro](https://pomodoro-five-zeta.vercel.app)
-
----
-
-📄 O que falta?
+### 📄 O que falta?
 - ☑️ Adicionar Lo-fi;
 - ☑️ Refatorar algumas funcionalidades;
 - ☑️ Responsividade;
