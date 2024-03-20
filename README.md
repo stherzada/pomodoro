@@ -1,27 +1,47 @@
-# React + TypeScript + Vite
+# Pomodoro
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 📍 Por quê do Projeto?
 
-Currently, two official plugins are available:
+- Essa ideia surgiu atraves de um curso da Udemy do [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/), onde ele propôs um desafio de criar um pomodoro do seu jeito, sendo assim surgiu este projeto.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- A técnica **Pomodoro** é um método de gerenciamento de tempo que envolve dividir o trabalho em períodos, chamados de "pomodoros", seguidos por alguns intervalos de descanso. Após quatro pomodoros, pode se fazer uma pausa mais longa. Essa técnica tem a tendência de melhorar a concentração e a produtividade ao combinar períodos de foco intenso com intervalos de descanso.
 
-## Expanding the ESLint configuration
+![imagem com um timer de pomodoro, alguns botões, e legendas de quantos pomodoros fez, tempo de pomodoro, quantos ciclos foram fechados](https://i.imgur.com/Qf4ato2.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
+### ⭐ Como utilizar este projeto?
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+-  Para fazer este projeto rodar em sua máquina, recomendo **clonar** este projeto e instalar qualquer versão acima da **12** do [node](https://nodejs.org/en/download) em sua máquina.
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+Logo após, abra seu terminal dentro da sua IDE e digite:
+
+``npm i ``
+
+Quando todas as expansões forem baixadas, dê este comando no terminal:
+
+``npm run dev``
+
+ - Clique no link que será gerado com **_ctrl + botão esquerdo do mouse_**, exemplo de link que pode ser gerado: http://localhost:0001/
+
+
+---
+
+### 🛠 Tecnologias Utilizadas
+
+- [React](https://react.dev)
+- [Vite](https://vitejs.dev)
+- [Nabla (Fonte)](https://nabla.typearture.com)
+--- 
+
+### 🔗 Link para o projeto: 
+- [Pomodoro](https://pomodoro-five-zeta.vercel.app)
+
+---
+
+📄 O que falta?
+- ☑️ Adicionar Lo-fi;
+- ☑️ Refatorar algumas funcionalidades;
+- ☑️ Responsividade;
+--- 
+<div align="center">Feito por <a href="https://www.linkedin.com/in/sthefany-sther/">Sther</a> 🤍</div>
