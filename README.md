@@ -44,4 +44,4 @@ Quando todas as expansões forem baixadas, dê este comando no terminal:
 - ☑️ Refatorar algumas funcionalidades;
 - ☑️ Responsividade;
 --- 
-<div align="center">Feito por <a href="https://www.linkedin.com/in/sthefany-sther/">Sther</a> 🤍</div>
+<div align="center">Feito por <a href="https://www.linkedin.com/in/sthefany-sther/" target="_blank">Sther</a> 🤍</div>
