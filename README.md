@@ -37,11 +37,13 @@ Quando todas as expansões forem baixadas, dê este comando no terminal:
 - [React](https://react.dev)
 - [Vite](https://vitejs.dev)
 - [Nabla (Fonte)](https://nabla.typearture.com)
+
 --- 
 
 ### 📄 O que falta?
 - ☑️ Adicionar Lo-fi;
 - ☑️ Refatorar algumas funcionalidades;
 - ☑️ Responsividade;
+
 --- 
 <div align="center">Feito por <a href="https://www.linkedin.com/in/sthefany-sther/" target="_blank">Sther</a> 🤍</div>
