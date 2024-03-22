@@ -18,21 +18,21 @@
 ### ⭐ Como utilizar este projeto local?
 
 -  Para fazer este projeto rodar em sua máquina, recomendo **clonar** este projeto e instalar qualquer versão acima da **12** do [node](https://nodejs.org/en/download) em sua máquina.
-``shell
+```shell
 git clone https://github.com/stherzada/pomodoro.git
-``
+```
 
 Logo após, abra seu terminal dentro da sua IDE e digite:
 
-``shell
+```shell
 npm i 
-``
+```
 
 Quando todas as expansões forem baixadas, dê este comando no terminal:
 
-``shell
+```shell
 npm run dev
-``
+```
 
  - Clique no link que será gerado com **_ctrl + botão esquerdo do mouse_**, exemplo de link que pode ser gerado: http://localhost:0001/
 
