@@ -50,7 +50,6 @@ npm run dev
 ### 📄 O que falta?
 - ☑️ Adicionar Lo-fi;
 - ☑️ Refatorar algumas funcionalidades;
-- ☑️ Responsividade;
 
 --- 
 <div align="center">Feito por <a href="https://www.linkedin.com/in/sthefany-sther/" target="_blank">Sther</a> 🤍</div>
