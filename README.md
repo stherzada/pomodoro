@@ -17,7 +17,7 @@ Este projeto nasceu de um desafio do curso de [Luiz Otávio Miranda](https://www
 ### 🛠 Tecnologias Utilizadas
 
 - **React 19** + **TypeScript**
-- **Vite 8** (Build rápido)
+- **Vite 8**x
 - **Tailwind CSS v4** (Estilização moderna e performática)
 - **Framer Motion** (Animações fluidas)
 - **Google Fonts** (Bricolage Grotesque e Darker Grotesque)
