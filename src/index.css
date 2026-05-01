@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-@custom-variant dark (&:where(.dark, .dark *));
+@variant dark (&:where(.dark, .dark *));
 
 @theme {
   --color-neopink: #ff90e8;
@@ -8,7 +8,7 @@
   --color-neopurple: #b24bf3;
   --color-neoviolet: #712ef2;
   --color-neopink-dark: #630551;
-  --color-neomagenta-dark: #2f282b;
+  --color-neomagenta-dark: #361f58;
   --color-neopurple-dark: #3b0066;
   --color-neoviolet-dark: #270066;
 }

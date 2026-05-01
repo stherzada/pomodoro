@@ -16,11 +16,11 @@ export function StatsCard({ completedCycles, fullWorkingTime, cardBase }: Props)
       </h3>
       <div className="grid grid-cols-1 gap-2">
         <div className="bg-white/90 dark:bg-black/40 p-3 border-4 border-black shadow-[3px_3px_0_0_#000] transition-all !pl-1">
-          <p className="text-[10px] font-black uppercase dark:text-black/80 mb-0 transition-colors">Cycles</p>
+          <p className="text-[10px] font-black uppercase dark:text-black/80 dark:text-white mb-0 transition-colors">Cycles</p>
           <p className="text-2xl font-black text-black dark:text-white transition-colors">{completedCycles}</p>
         </div>
         <div className="bg-white/90 dark:bg-black/40 p-3 border-4 border-black shadow-[3px_3px_0_0_#000] transition-all !pl-1">
-          <p className="text-[10px] font-black uppercase dark:text-black/80 mb-0 transition-colors">Focus Time</p>
+          <p className="text-[10px] font-black uppercase dark:text-black/80 dark:text-white mb-0 transition-colors">Focus Time</p>
           <p className="text-2xl font-black text-black dark:text-white transition-colors">{secondsToTime(fullWorkingTime)}</p>
         </div>
       </div>
