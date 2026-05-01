@@ -9,9 +9,9 @@ interface Props {
 
 export function Button({ text, onClick, className = "", variant = 'primary' }: Props) {
   const variants = {
-    primary: "bg-neopurple hover:bg-[#c66cfa]",
-    secondary: "bg-neopink hover:bg-[#ffb3f0]",
-    danger: "bg-neoviolet text-white hover:bg-[#854bf4]",
+    primary: "bg-[#b24bf3] hover:bg-[#c66cfa]",
+    secondary: "bg-[#ff90e8] hover:bg-[#ffb3f0]",
+    danger: "bg-[#712ef2] text-white hover:bg-[#854bf4]",
   }
 
   return (
