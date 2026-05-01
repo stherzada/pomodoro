@@ -34,37 +34,37 @@ export function PomodoroTimer(props: PomodoroConfig) {
     <motion.div
       initial={{ opacity: 0, scale: 0.95 }}
       animate={{ opacity: 1, scale: 1 }}
-      className="max-w-3xl w-full flex flex-col gap-8 relative"
+      className="max-w-3xl w-full flex flex-col gap-4 relative"
     >
       <button
         onClick={theme.toggleNightMode}
-        className="absolute -top-12 right-0 bg-white dark:bg-slate-800 dark:text-white border-4 border-black px-4 py-2 shadow-[4px_4px_0_0_#000] active:shadow-none active:translate-x-1 active:translate-y-1 font-black transition-all z-50 text-xs tracking-wider !p-2"
+        className="absolute -top-14 right-0 bg-white dark:bg-slate-800 dark:text-white border-4 border-black px-4 py-2 shadow-[4px_4px_0_0_#000] active:shadow-none active:translate-x-1 active:translate-y-1 font-black transition-all z-50 text-xs tracking-wider !p-2"
       >
         {theme.isNightMode ? "☀️" : "🌙"}
       </button>
 
       {/* Timer Card */}
-      <div className={`${cardBase} flex flex-col items-center gap-2 relative overflow-hidden`}>
-        <div className="flex flex-col items-center z-10 w-full pt-4 !mx-24 !my-8  ">
-          <span className="text-sm font-black uppercase tracking-[0.2em] text-black/50 dark:text-white/50 mb-4 transition-colors !mb-2">Current Mood</span>
-          <span className={`px-6 py-2 text-sm font-black uppercase border-4 border-black shadow-[2px_2px_0_0_#000] transition-colors !px-2 ${p.working ? 'bg-neomagenta text-white' : p.resting ? 'bg-neopink text-black' : 'bg-neoviolet text-white'}`}>
+      <div className={`${cardBase} flex flex-col items-center gap-1 relative overflow-hidden`}>
+        <div className="flex flex-col items-center z-10 w-full pt-2 !mx-12 !my-4">
+          <span className="text-xs font-black uppercase tracking-[0.2em] text-black/50 dark:text-white/50 mb-2 transition-colors !mb-1">Current Mood</span>
+          <span className={`px-4 py-1 text-xs font-black uppercase border-4 border-black shadow-[2px_2px_0_0_#000] transition-colors ${p.working ? 'bg-neomagenta text-white' : p.resting ? 'bg-neopink text-black' : 'bg-neoviolet text-white'}`}>
             {p.working ? "Work Mode" : p.resting ? "Resting" : "Ready"}
           </span>
 
-          <div className="my-10 w-full flex justify-center scale-110">
+          <div className="my-4 w-full flex justify-center scale-100">
             <Timer mainTime={p.mainTime} />
           </div>
 
-          <div className="flex gap-6 flex-wrap justify-center !mt-8">
-            <Button text="Start" onClick={() => p.configureWork()} variant="secondary" className="!p-2" />
-            <Button text="Rest" onClick={() => p.configureRest(false)} variant="primary" className="!p-3" />
+          <div className="flex gap-4 flex-wrap justify-center !mt-4">
+            <Button text="Start" onClick={() => p.configureWork()} variant="secondary" className="!p-2 !px-6" />
+            <Button text="Rest" onClick={() => p.configureRest(false)} variant="primary" className="!p-3 !px-6" />
             <AnimatePresence>
               {(p.working || p.resting) && (
                 <Button
                   text={p.timeCounting ? "Pause" : "Play"}
                   onClick={() => p.setTimeCouting(!p.timeCounting)}
                   variant="danger"
-                  className="!p-2"
+                  className="!p-2 !px-6"
                 />
               )}
             </AnimatePresence>
@@ -72,7 +72,7 @@ export function PomodoroTimer(props: PomodoroConfig) {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         <StatsCard
           completedCycles={p.completetedCycles}
           fullWorkingTime={p.fullWorkingTime}

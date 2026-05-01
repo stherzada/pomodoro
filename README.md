@@ -1,55 +1,63 @@
-# Pomodoro
+# 🍅 Pomodoro Neobrutalista
 
-### 📍 Por quê do Projeto?
+Um cronômetro Pomodoro moderno com estética **Neobrutalista**, construído para ser rápido, funcional e visualmente impactante.
 
-- Essa ideia surgiu atraves de um curso da Udemy do [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/), onde ele propôs um desafio de criar um pomodoro do seu jeito, sendo assim surgiu este projeto.
+![Pomodoro Preview](./public/cover_compact.png)
 
-- A técnica **Pomodoro** é um método de gerenciamento de tempo que envolve dividir o trabalho em períodos, chamados de "pomodoros", seguidos por alguns intervalos de descanso. Após quatro pomodoros, pode se fazer uma pausa mais longa. Essa técnica tem a tendência de melhorar a concentração e a produtividade ao combinar períodos de foco intenso com intervalos de descanso.
+### 📍 Sobre o Projeto
 
-![imagem com um timer de pomodoro, alguns botões, e legendas de quantos pomodoros fez, tempo de pomodoro, quantos ciclos foram fechados](https://i.imgur.com/Qf4ato2.png)
-
----
-### 🔗 Link para o projeto: 
-- [Pomodoro](https://pomodoro-five-zeta.vercel.app)
-
-
----
-
-### ⭐ Como utilizar este projeto local?
-
--  Para fazer este projeto rodar em sua máquina, recomendo **clonar** este projeto e instalar qualquer versão acima da **12** do [node](https://nodejs.org/en/download) em sua máquina.
-```shell
-git clone https://github.com/stherzada/pomodoro.git
-```
-
-Logo após, abra seu terminal dentro da sua IDE e digite:
-
-```shell
-npm i 
-```
-
-Quando todas as expansões forem baixadas, dê este comando no terminal:
-
-```shell
-npm run dev
-```
-
- - Clique no link que será gerado com **_ctrl + botão esquerdo do mouse_**, exemplo de link que pode ser gerado: http://localhost:0001/
-
+Este projeto nasceu de um desafio do curso de [Luiz Otávio Miranda](https://www.udemy.com/user/luiz-otavio-miranda/), evoluindo para uma aplicação completa com:
+- **Estética Bento Box**: Layout organizado em cards com sombras sólidas.
+- **Modo Dia/Noite**: Suporte total a temas claros e escuros.
+- **Timer de Alta Precisão**: Lógica baseada em timestamps (`Date.now()`) para garantir precisão mesmo com a aba em segundo plano.
+- **Mobile Friendly**: Layout responsivo para qualquer dispositivo.
 
 ---
 
 ### 🛠 Tecnologias Utilizadas
 
-- [React](https://react.dev)
-- [Vite](https://vitejs.dev)
-- [Nabla (Fonte)](https://nabla.typearture.com)
+- **React 19** + **TypeScript**
+- **Vite 8** (Build rápido)
+- **Tailwind CSS v4** (Estilização moderna e performática)
+- **Framer Motion** (Animações fluidas)
+- **Google Fonts** (Bricolage Grotesque e Darker Grotesque)
 
---- 
+---
 
-### 📄 O que falta?
-- ☑️ Adicionar Lo-fi;
-- ☑️ Refatorar algumas funcionalidades;
+### ⭐ Como rodar localmente?
 
---- 
-<div align="center">Feito por <a href="https://www.linkedin.com/in/sthefany-sther/" target="_blank">Sther</a> 🤍</div>
+Este projeto utiliza o [Bun](https://bun.sh) para máxima performance, mas funciona perfeitamente com Node/NPM.
+
+1. **Clone o repositório:**
+```shell
+git clone https://github.com/stherzada/pomodoro.git
+cd pomodoro
+```
+
+2. **Instale as dependências:**
+```shell
+bun install
+# ou
+npm install
+```
+
+3. **Inicie o servidor de desenvolvimento:**
+```shell
+bun dev
+# ou
+npm run dev
+```
+
+4. **Acesse:** `http://localhost:5173`
+
+---
+
+### 📄 O que foi implementado?
+- [x] Refatoração completa da UI (Neobrutalismo).
+- [x] Lógica de Timer resiliente a background throttling.
+- [x] Configurações personalizáveis de tempo.
+- [x] Histórico de ciclos e tempo de foco.
+- [x] Toggle de Tema (Day/Night).
+
+---
+<div align="center">Feito com 🤍 por <a href="https://www.linkedin.com/in/sthefany-sther/" target="_blank">Sther</a></div>

@@ -33,7 +33,7 @@ body {
   overflow-x: hidden;
 }
 
-body.dark {
+.dark body {
   background-color: var(--color-neoviolet-dark);
 }
 
@@ -41,7 +41,7 @@ body.working {
   background-color: var(--color-neomagenta);
 }
 
-body.dark.working {
+.dark body.working {
   background-color: var(--color-neomagenta-dark);
 }
 
@@ -49,6 +49,6 @@ body.resting {
   background-color: var(--color-neopink);
 }
 
-body.dark.resting {
+.dark body.resting {
   background-color: var(--color-neopink-dark);
 }

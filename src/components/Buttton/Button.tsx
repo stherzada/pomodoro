@@ -4,7 +4,7 @@ interface Props {
   text: string
   onClick?: () => void
   className?: string
-  variant?: 'primary' | 'secondary' | 'danger'
+  variant?: 'primary' | 'secondary' | 'danger' | 'accent'
 }
 
 export function Button({ text, onClick, className = "", variant = 'primary' }: Props) {
@@ -12,6 +12,7 @@ export function Button({ text, onClick, className = "", variant = 'primary' }: P
     primary: "bg-[#b24bf3] hover:bg-[#c66cfa]",
     secondary: "bg-[#ff90e8] hover:bg-[#ffb3f0]",
     danger: "bg-[#712ef2] text-white hover:bg-[#854bf4]",
+    accent: "bg-[#ff2a85] text-white hover:bg-[#ff4d9a]",
   }
 
   return (
