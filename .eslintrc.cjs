@@ -23,7 +23,7 @@ module.exports = {
     },
   },
   rules: {
-    'prettier/prettier': ['error'],
+    'prettier/prettier': 0,
     'semi': ['error', 'never'],
     'react-refresh/only-export-components': [
       'warn',

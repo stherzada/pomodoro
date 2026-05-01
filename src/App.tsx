@@ -1,10 +1,10 @@
-import "./App.css"
+import "./index.css"
 import { PomodoroTimer } from "./components/Pomodoro/PomodoroTimer"
 
-function App(): JSX.Element {
+function App() {
   return (
     <>
-      <div className="container">
+      <div className="flex flex-col text-center transition-all duration-500 ease-out">
         <PomodoroTimer
           PomodoroTime={1500}
           shortRestTime={300}
@@ -15,5 +15,4 @@ function App(): JSX.Element {
     </>
   )
 }
-
 export default App

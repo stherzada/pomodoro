@@ -13,7 +13,7 @@ interface Props {
   cycles: number
 }
 
-export function PomodoroTimer(props: Props): JSX.Element {
+export function PomodoroTimer(props: Props) {
   const [mainTime, setMainTime] = React.useState(props.PomodoroTime)
   const [timeCounting, setTimeCouting] = React.useState(false)
   const [resting, setResting] = React.useState(false)
@@ -103,9 +103,9 @@ export function PomodoroTimer(props: Props): JSX.Element {
 
   return (
     <>
-      <div className="titleMood">
-        <h2>You are:</h2>
-        <h2 id="status">{working ? "Working" : "Resting"}</h2>
+      <div className="flex flex-col mt-4">
+        <h2 className="text-xl font-bold text-[rgba(9,9,9,0.25)]">You are:</h2>
+        <h2 className="text-xl font-bold text-[rgba(9,9,9,0.50)]">{working ? "Working" : "Resting"}</h2>
       </div>
       <Timer mainTime={mainTime} />
       <div className="controls">
