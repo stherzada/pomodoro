@@ -3,16 +3,14 @@ import { PomodoroTimer } from "./components/Pomodoro/PomodoroTimer"
 
 function App() {
   return (
-    <>
-      <div className="flex flex-col text-center transition-all duration-500 ease-out">
-        <PomodoroTimer
-          PomodoroTime={1500}
-          shortRestTime={300}
-          longRestTime={900}
-          cycles={4}
-        />
-      </div>
-    </>
+    <main className="min-h-screen w-full flex items-center justify-center p-4">
+      <PomodoroTimer
+        PomodoroTime={1500}
+        shortRestTime={300}
+        longRestTime={900}
+        cycles={4}
+      />
+    </main>
   )
 }
 export default App

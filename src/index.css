@@ -1,45 +1,54 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-neopink: #ff90e8;
+  --color-neomagenta: #ff2a85;
+  --color-neopurple: #b24bf3;
+  --color-neoviolet: #712ef2;
+  --color-neopink-dark: #630551;
+  --color-neomagenta-dark: #2f282b;
+  --color-neopurple-dark: #3b0066;
+  --color-neoviolet-dark: #270066;
+}
+
 * {
   margin: 0;
   padding: 0;
   outline: none;
   box-sizing: border-box;
-
 }
 
-
 body {
-  font-family: 'Roboto', sans-serif;
-  background: rgb(131, 58, 180);
-  background: linear-gradient(90deg, #deaaff 0%, #d8bbff 25%, #d0d1ff 50%, #c8e7ff 75%, #c0fdff 100%);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
-  height: 100vh;
+  font-family: 'Darker Grotesque', system-ui, -apple-system, sans-serif;
+  background-color: var(--color-neoviolet);
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+body.dark {
+  background-color: var(--color-neoviolet-dark);
 }
 
 body.working {
-  background: #014f86;
-  background: linear-gradient(90deg, #a9d6e5 0%, #89c2d9 50%, #61a5c2 100%);
-  animation: gradient 15s ease infinite;
-  background-size: 400% 400%;
-
+  background-color: var(--color-neomagenta);
 }
 
+body.dark.working {
+  background-color: var(--color-neomagenta-dark);
+}
 
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
+body.resting {
+  background-color: var(--color-neopink);
+}
 
-  50% {
-    background-position: 100% 50%;
-  }
-
-  100% {
-    background-position: 0% 50%;
-  }
-
+body.dark.resting {
+  background-color: var(--color-neopink-dark);
 }
