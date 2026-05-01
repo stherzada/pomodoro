@@ -1,18 +1,16 @@
-import "./App.css"
+import "./index.css"
 import { PomodoroTimer } from "./components/Pomodoro/PomodoroTimer"
 
-function App(): JSX.Element {
+function App() {
   return (
-    <>
-      <div className="container">
-        <PomodoroTimer
-          PomodoroTime={1500}
-          shortRestTime={300}
-          longRestTime={900}
-          cycles={4}
-        />
-      </div>
-    </>
+    <main className="min-h-screen w-full flex items-center justify-center p-4">
+      <PomodoroTimer
+        PomodoroTime={1500}
+        shortRestTime={300}
+        longRestTime={900}
+        cycles={4}
+      />
+    </main>
   )
 }
 

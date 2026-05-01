@@ -1,34 +1,44 @@
-import "./Button.css"
+import { motion } from "framer-motion"
 
 interface Props {
   text: string
   onClick?: () => void
   className?: string
+  variant?: 'primary' | 'secondary' | 'danger'
 }
 
-export function Button(props: Props): JSX.Element {
+export function Button({ text, onClick, className = "", variant = 'primary' }: Props) {
+  const variants = {
+    primary: "bg-neopurple hover:bg-[#c66cfa]",
+    secondary: "bg-neopink hover:bg-[#ffb3f0]",
+    danger: "bg-neoviolet text-white hover:bg-[#854bf4]",
+  }
+
   return (
-    <>
-      <button onClick={props.onClick} className={props.className}>
-        {props.text}
-        <svg width="90" height="46" viewBox="0 0 79 46" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g filter="url(#filter0_f_618_1123)">
-            <path d="M42.9 2H76.5L34.5 44H2L42.9 2Z" fill="url(#paint0_linear_618_1123)" />
-          </g>
-          <defs>
-            <filter id="filter0_f_618_1123" x="0" y="0" width="78.5" height="46" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-              <feFlood flood-opacity="0" result="BackgroundImageFix" />
-              <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
-              <feGaussianBlur stdDeviation="1" result="effect1_foregroundBlur_618_1123" />
-            </filter>
-            <linearGradient id="paint0_linear_618_1123" x1="76.5" y1="2.00002" x2="34.5" y2="44" gradientUnits="userSpaceOnUse">
-              <stop stop-color="white" stop-opacity="0.6" />
-              <stop offset="1" stop-color="white" stop-opacity="0.05" />
-            </linearGradient>
-          </defs>
-        </svg>
-      </button>
-    </>
+    <motion.button
+      whileHover={{ 
+        scale: 1.05, 
+        rotate: -2,
+        boxShadow: "10px 10px 0px 0px rgba(0,0,0,1)" 
+      }}
+      whileTap={{ 
+        scale: 0.95, 
+        rotate: 1, 
+        x: 6, 
+        y: 6,
+        boxShadow: "0px 0px 0px 0px rgba(0,0,0,1)" 
+      }}
+      onClick={onClick}
+      className={`
+        relative px-10 py-4 font-black uppercase tracking-widest text-black
+        border-4 border-black transition-all duration-150
+        shadow-[6px_6px_0px_0px_rgba(0,0,0,1)]
+        cursor-pointer
+        ${variants[variant]}
+        ${className}
+      `}
+    >
+      {text}
+    </motion.button>
   )
 }
-

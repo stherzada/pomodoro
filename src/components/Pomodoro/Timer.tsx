@@ -5,7 +5,7 @@ interface Props {
   mainTime: number
 }
 
-export function Timer(props: Props): JSX.Element {
+export function Timer(props: Props) {
   return (
     <>
       <div className="timer">{secondsToMinutes(props.mainTime)}</div>
