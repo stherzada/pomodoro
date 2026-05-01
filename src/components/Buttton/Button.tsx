@@ -16,17 +16,17 @@ export function Button({ text, onClick, className = "", variant = 'primary' }: P
 
   return (
     <motion.button
-      whileHover={{ 
-        scale: 1.05, 
+      whileHover={{
+        scale: 1.05,
         rotate: -2,
-        boxShadow: "10px 10px 0px 0px rgba(0,0,0,1)" 
+        boxShadow: "10px 10px 0px 0px rgba(0,0,0,1)"
       }}
-      whileTap={{ 
-        scale: 0.95, 
-        rotate: 1, 
-        x: 6, 
+      whileTap={{
+        scale: 0.95,
+        rotate: 1,
+        x: 6,
         y: 6,
-        boxShadow: "0px 0px 0px 0px rgba(0,0,0,1)" 
+        boxShadow: "0px 0px 0px 0px rgba(0,0,0,1)"
       }}
       onClick={onClick}
       className={`

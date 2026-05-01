@@ -19,7 +19,7 @@ export function PomodoroTimer(props: PomodoroConfig) {
     const r = typeof restInput === "number" ? restInput : 0
     const workSecs = w * 60
     const restSecs = r * 60
-    
+
     p.setCustomPomodoroTime(workSecs)
     p.setCustomShortRestTime(restSecs)
 
@@ -73,12 +73,12 @@ export function PomodoroTimer(props: PomodoroConfig) {
       </div>
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-        <StatsCard 
-          completedCycles={p.completetedCycles} 
-          fullWorkingTime={p.fullWorkingTime} 
-          cardBase={cardBase} 
+        <StatsCard
+          completedCycles={p.completetedCycles}
+          fullWorkingTime={p.fullWorkingTime}
+          cardBase={cardBase}
         />
-        <SettingsCard 
+        <SettingsCard
           cardBase={cardBase}
           workInput={workInput}
           setWorkInput={setWorkInput}
