@@ -1,7 +1,7 @@
 import "./index.css"
 import { PomodoroTimer } from "./components/Pomodoro/PomodoroTimer"
 
-function App(): JSX.Element {
+function App() {
   return (
     <>
       <div className="flex flex-col text-center transition-all duration-500 ease-out">

@@ -6,7 +6,7 @@ interface Props {
   className?: string
 }
 
-export function Button(props: Props): JSX.Element {
+export function Button(props: Props) {
   return (
     <>
       <button onClick={props.onClick} className={props.className}>

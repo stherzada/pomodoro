@@ -13,7 +13,7 @@ interface Props {
   cycles: number
 }
 
-export function PomodoroTimer(props: Props): JSX.Element {
+export function PomodoroTimer(props: Props) {
   const [mainTime, setMainTime] = React.useState(props.PomodoroTime)
   const [timeCounting, setTimeCouting] = React.useState(false)
   const [resting, setResting] = React.useState(false)
